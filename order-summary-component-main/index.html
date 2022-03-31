@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;400;600;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+  <style>
+
+body{
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(images/pattern-background-desktop.svg);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box{
+  height: 68%;
+  width:25%;
+  border-radius: 15px;
+  box-shadow:hsl(225, 100%, 98%) ;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);    
+  text-align: center;
+  
+}
+
+.box>img{
+  height: 40%;
+  width: 100%;
+  border-radius: 10px 10px 0 0 ;
+}
+
+.box>h3{
+  text-align: center;
+  color: black;
+  font-family: sans-serif;
+}
+
+.box>p{
+  text-align: center;
+  color:hsl(224, 23%, 55%);
+  font-size: 12px;
+  margin: 25px;
+  font-size: 18px;
+  
+  
+}
+
+.small_items{
+  font-family: sans-serif;
+  font-size: 10px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  height: 60px;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+
+}
+
+.small_items>h4{
+  padding: 10px;
+  color: blue;
+  text-decoration: underline;
+}
+
+.small_items>h4:hover{
+  cursor: pointer;
+  color: hsl(245, 75%, 52%);
+  text-decoration: none;
+}
+
+.item1{
+  display: flex;
+}
+
+.item1>img{
+height: 50%;
+padding: 15px;
+}
+
+.item2{
+  margin-top: 10px;
+}
+
+.item2>h3{
+
+color:black;
+line-height: 1px;
+}
+
+.item2>h4{
+  color:hsl(224, 23%, 55%) ;
+  
+}
+
+.payment_box{
+  
+  border-radius:5px ;
+  font-family: sans-serif;
+  box-shadow:0 8px 16px 0 rgba(15, 18, 199, 0.2);
+  background-color:hsl(245, 75%, 52%);
+  height:35px;
+  width: 250px;
+  position: relative;
+  margin: 28px;
+  padding: 1px;
+  left: 25px;
+  
+}
+
+.payment_box:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.payment_box>h6{
+  position: absolute;
+  color:white;
+  margin-left: 50px;
+  margin: 10px;
+  top:1px;
+  left: 55px;
+
+}
+
+.cancel_order{
+  color:hsl(224, 23%, 55%);
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: -5px;
+}
+
+.cancel_order:hover{
+cursor: pointer;
+color: black;
+}
+
+@media screen and (min-width: 375px) {
+  .box{
+  height: 90%;
+  width:90%;
+  border-radius: 15px;
+  box-shadow:hsl(225, 100%, 98%) ;
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); 
+
+  
+}
+
+.payment_box{
+  
+  border-radius:5px ;
+  font-family: sans-serif;
+  box-shadow:0 8px 16px 0 rgba(15, 18, 199, 0.2);
+  background-color:hsl(245, 75%, 52%);
+  height:35px;
+  width: 250px;
+  position: relative;
+  margin: 28px;
+  padding: 1px;
+  left: 10px;
+  
+}
+
+
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+  <div class="box">
+
+<img src="images/illustration-hero.svg" alt="girlpic">
+  
+<h3>Order Summary</h3>
+
+<p>You can now listen to millions of songs, audiobooks,and podcasts on any device anywhere you like!</p>
+
+<div class="small_items"> 
+  
+  <div class="item1">
+<img src="images/icon-music.svg" alt="icon-music">
+
+
+<div class="item2">
+<h3>Annual Plan</h3>
+
+<h4>$59.99/year</h4>
+</div>
+
+</div>
+
+<h4>Change</h4>
+</div>
+
+
+<div class="payment_box">
+<h6>Proceed to Payment</h6>
+</div>
+
+<div class="cancel_order">
+<h6>Cancel Order</h6>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
+
